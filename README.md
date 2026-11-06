@@ -14,7 +14,7 @@ Welcome to my Texas A&M University GIS coursework repository. This repository co
 | Homework | Week 03 | [Homework 03](Homework/Week03/) |
 | Lab | Week 01 | [Lab 01](Labs/Week01/) |
 | Lab | Week 02 | [Lab 02](Labs/Week02/) |
-| Lab | Week 03 | [Lab 03](Labs/Week03/) |
+| Lab | Week 03 | [Lab 03](Labs/Week03/) |[Lab 03 - HTML Resume](./lab03/)
 
 ## Projects
 
