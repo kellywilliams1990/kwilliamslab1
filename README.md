@@ -16,7 +16,7 @@ Welcome to my Texas A&M University GIS coursework repository. This repository co
 | Lab | Week 02 | [Lab 02](Labs/Week02/) |
 | Lab | Week 03 | [Lab 03](Labs/Week03/) |
 | Lab | Week 04 | [Lab 03 - HTML Resume](lab03/) |
-
+| Labs | Lab 05 | [Lab 05 - Leaflet Mapping](Labs/05/) |
 ## Projects
 
 [View Projects](Projects/)
