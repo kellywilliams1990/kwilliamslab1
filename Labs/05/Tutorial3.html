@@ -1,1 +1,90 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 - Leaflet Tutorial 3: Custom Icons</title>
+
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <style>
+        #map {
+            height: 550px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Leaflet Tutorial 3: Custom Icons</h1>
+<p>Creating customized map markers using Leaflet.</p>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+    // Create map centered on London
+    var map = L.map('map').setView([51.505, -0.09], 13);
+
+    // Add OpenStreetMap background
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Create custom green leaf icon
+    var greenIcon = L.icon({
+        iconUrl: 'https://leafletjs.com/examples/custom-icons/leaf-green.png',
+        shadowUrl: 'https://leafletjs.com/examples/custom-icons/leaf-shadow.png',
+
+        iconSize: [38, 95],
+        shadowSize: [50, 64],
+        iconAnchor: [22, 94],
+        shadowAnchor: [4, 62],
+        popupAnchor: [-3, -76]
+    });
+
+    // Create custom red leaf icon
+    var redIcon = L.icon({
+        iconUrl: 'https://leafletjs.com/examples/custom-icons/leaf-red.png',
+        shadowUrl: 'https://leafletjs.com/examples/custom-icons/leaf-shadow.png',
+
+        iconSize: [38, 95],
+        shadowSize: [50, 64],
+        iconAnchor: [22, 94],
+        shadowAnchor: [4, 62],
+        popupAnchor: [-3, -76]
+    });
+
+    // Create custom orange leaf icon
+    var orangeIcon = L.icon({
+        iconUrl: 'https://leafletjs.com/examples/custom-icons/leaf-orange.png',
+        shadowUrl: 'https://leafletjs.com/examples/custom-icons/leaf-shadow.png',
+
+        iconSize: [38, 95],
+        shadowSize: [50, 64],
+        iconAnchor: [22, 94],
+        shadowAnchor: [4, 62],
+        popupAnchor: [-3, -76]
+    });
+
+    // Add custom markers with popups
+    L.marker([51.5, -0.09], {icon: greenIcon})
+        .addTo(map)
+        .bindPopup("I am a green leaf!");
+
+    L.marker([51.495, -0.083], {icon: redIcon})
+        .addTo(map)
+        .bindPopup("I am a red leaf!");
+
+    L.marker([51.49, -0.10], {icon: orangeIcon})
+        .addTo(map)
+        .bindPopup("I am an orange leaf!");
+
+</script>
+</body>
+</html>
+
